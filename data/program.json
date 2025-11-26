@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Opening Keynote: The Future of Health Data in Africa",
+    "speaker": "Dr. Amina Juma",
+    "affiliation": "African Health Research Institute",
+    "time": "09:00 - 10:00",
+    "day": "Day 1",
+    "track": "Governance",
+    "abstract": "An overview of the challenges and opportunities in health data governance across the continent."
+  },
+  {
+    "id": 2,
+    "title": "REDCap for Clinical Trials: Best Practices",
+    "speaker": "John Doe",
+    "affiliation": "Clinical Trials Unit, UCT",
+    "time": "10:30 - 12:00",
+    "day": "Day 1",
+    "track": "Training",
+    "abstract": "A deep dive into setting up and managing clinical trials using REDCap."
+  },
+  {
+    "id": 3,
+    "title": "Interoperability Standards: FHIR and REDCap",
+    "speaker": "Sarah Smith",
+    "affiliation": "Health Informatics SA",
+    "time": "13:00 - 14:30",
+    "day": "Day 1",
+    "track": "Interoperability",
+    "abstract": "Connecting REDCap to other health information systems using FHIR."
+  },
+  {
+    "id": 4,
+    "title": "Infrastructure Scaling for Large Cohorts",
+    "speaker": "Michael Brown",
+    "affiliation": "Data Science Africa",
+    "time": "09:00 - 10:30",
+    "day": "Day 2",
+    "track": "Infrastructure",
+    "abstract": "Technical strategies for hosting REDCap for large-scale longitudinal studies."
+  }
+]

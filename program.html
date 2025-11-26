@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program | REDCap Africa Symposium</title>
+    <meta name="description" content="Explore the symposium schedule, speakers, and sessions.">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path
+                        d="M12 2L2 7l10 5 10-5-10-5zm0 9l2.5-1.25L12 8.5l-2.5 1.25L12 11zm0 2.5l-5-2.5-5 2.5L12 22l10-8.5-5-2.5-5 2.5z" />
+                </svg>
+                REDCap Africa
+            </a>
+            <button class="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                ☰
+            </button>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="venue.html" class="nav-link">Venue</a></li>
+                    <li><a href="program.html" class="nav-link">Program</a></li>
+                    <li><a href="registration.html" class="nav-link">Registration</a></li>
+                    <li><a href="past-years.html" class="nav-link">Past Years</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section"
+            style="background-color: var(--color-secondary); color: var(--color-white); padding: 3rem 0;">
+            <div class="container text-center">
+                <h1>Symposium Program</h1>
+                <p>Discover sessions, workshops, and networking opportunities.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <!-- Filters -->
+                <div class="program-filters"
+                    style="margin-bottom: 2rem; display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+                    <button class="filter-btn btn btn-secondary active" data-filter="all">All Tracks</button>
+                    <button class="filter-btn btn btn-secondary" data-filter="Governance">Governance</button>
+                    <button class="filter-btn btn btn-secondary"
+                        data-filter="Interoperability">Interoperability</button>
+                    <button class="filter-btn btn btn-secondary" data-filter="Infrastructure">Infrastructure</button>
+                    <button class="filter-btn btn btn-secondary" data-filter="Training">Training</button>
+                </div>
+
+                <!-- Program Grid (Populated by JS) -->
+                <div id="program-grid" style="display: grid; gap: 1.5rem;">
+                    <p class="text-center">Loading program...</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>REDCap Africa</h3>
+                    <p>Connecting the African research community through data.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="venue.html">Venue</a></li>
+                        <li><a href="program.html">Program</a></li>
+                        <li><a href="registration.html">Register</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <p>Email: <a href="mailto:info@redcapafrica.org"
+                            style="color: var(--color-accent);">info@redcapafrica.org</a></p>
+                    <p>Johannesburg, South Africa</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 REDCap Africa Symposium. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

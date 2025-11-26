@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | REDCap Africa Symposium</title>
+    <meta name="description" content="Get in touch with the REDCap Africa Symposium organizers.">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path
+                        d="M12 2L2 7l10 5 10-5-10-5zm0 9l2.5-1.25L12 8.5l-2.5 1.25L12 11zm0 2.5l-5-2.5-5 2.5L12 22l10-8.5-5-2.5-5 2.5z" />
+                </svg>
+                REDCap Africa
+            </a>
+            <button class="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                ☰
+            </button>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="venue.html" class="nav-link">Venue</a></li>
+                    <li><a href="program.html" class="nav-link">Program</a></li>
+                    <li><a href="registration.html" class="nav-link">Registration</a></li>
+                    <li><a href="past-years.html" class="nav-link">Past Years</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section"
+            style="background-color: var(--color-secondary); color: var(--color-white); padding: 3rem 0;">
+            <div class="container text-center">
+                <h1>Contact Us</h1>
+                <p>We'd love to hear from you.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem;">
+                    <!-- Contact Form -->
+                    <div>
+                        <h2 class="mb-2">Send a Message</h2>
+                        <form id="contact-form" class="contact-form">
+                            <div class="mb-2">
+                                <label for="name" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Name
+                                    <span style="color: var(--color-primary);">*</span></label>
+                                <input type="text" id="name" name="name" required
+                                    style="width: 100%; padding: 0.75rem; border: 1px solid #ccc; border-radius: 4px;">
+                            </div>
+                            <div class="mb-2">
+                                <label for="email"
+                                    style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Email <span
+                                        style="color: var(--color-primary);">*</span></label>
+                                <input type="email" id="email" name="email" required
+                                    style="width: 100%; padding: 0.75rem; border: 1px solid #ccc; border-radius: 4px;">
+                            </div>
+                            <div class="mb-2">
+                                <label for="subject"
+                                    style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Subject</label>
+                                <input type="text" id="subject" name="subject"
+                                    style="width: 100%; padding: 0.75rem; border: 1px solid #ccc; border-radius: 4px;">
+                            </div>
+                            <div class="mb-2">
+                                <label for="message"
+                                    style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Message <span
+                                        style="color: var(--color-primary);">*</span></label>
+                                <textarea id="message" name="message" rows="5" required
+                                    style="width: 100%; padding: 0.75rem; border: 1px solid #ccc; border-radius: 4px;"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div>
+                        <h2 class="mb-2">Get in Touch</h2>
+                        <div class="mb-2">
+                            <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Email</h3>
+                            <p><a href="mailto:info@redcapafrica.org"
+                                    style="color: var(--color-primary);">info@redcapafrica.org</a></p>
+                        </div>
+                        <div class="mb-2">
+                            <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Address</h3>
+                            <p>
+                                REDCap Africa Secretariat<br>
+                                123 Research Drive<br>
+                                Johannesburg, 2000<br>
+                                South Africa
+                            </p>
+                        </div>
+                        <div class="mb-2">
+                            <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Social Media</h3>
+                            <div style="display: flex; gap: 1rem;">
+                                <a href="#" style="color: var(--color-secondary);">Twitter</a>
+                                <a href="#" style="color: var(--color-secondary);">LinkedIn</a>
+                                <a href="#" style="color: var(--color-secondary);">Facebook</a>
+                            </div>
+                        </div>
+                        <!-- Map Placeholder -->
+                        <div
+                            style="background: #eee; height: 200px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #666; margin-top: 2rem;">
+                            Map Placeholder
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>REDCap Africa</h3>
+                    <p>Connecting the African research community through data.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="venue.html">Venue</a></li>
+                        <li><a href="program.html">Program</a></li>
+                        <li><a href="registration.html">Register</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <p>Email: <a href="mailto:info@redcapafrica.org"
+                            style="color: var(--color-accent);">info@redcapafrica.org</a></p>
+                    <p>Johannesburg, South Africa</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 REDCap Africa Symposium. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
