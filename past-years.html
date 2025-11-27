@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Past Years | REDCap Africa Symposium</title>
+    <link rel="icon" type="image/svg+xml" href="./pics/Logo.png" />
     <meta name="description"
         content="Explore highlights, photos, and resources from previous REDCap Africa Symposiums.">
     <link rel="stylesheet" href="css/styles.css">
@@ -15,11 +16,7 @@
     <header class="site-header">
         <div class="container nav-container">
             <a href="index.html" class="logo">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                    <path
-                        d="M12 2L2 7l10 5 10-5-10-5zm0 9l2.5-1.25L12 8.5l-2.5 1.25L12 11zm0 2.5l-5-2.5-5 2.5L12 22l10-8.5-5-2.5-5 2.5z" />
-                </svg>
-                REDCap Africa
+                <img src="./pics/REDCapAfricalogo.png" alt="Logo">
             </a>
             <button class="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
                 ☰
@@ -39,8 +36,7 @@
     </header>
 
     <main>
-        <section class="section"
-            style="background-color: var(--color-secondary); color: var(--color-white); padding: 3rem 0;">
+        <section class="page-hero section">
             <div class="container text-center">
                 <h1>Past Years</h1>
                 <p>A look back at our growing community.</p>
@@ -50,58 +46,49 @@
         <section class="section">
             <div class="container">
                 <!-- Impact Stats -->
-                <div
-                    style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 2rem; margin-bottom: 4rem; text-align: center;">
-                    <div>
-                        <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-primary);">1,200+</div>
-                        <p>Attendees</p>
+                <div class="impact-stats">
+                    <div class="stat">
+                        <div class="stat-number">1,200+</div>
+                        <p class="stat-label">Attendees</p>
                     </div>
-                    <div>
-                        <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-primary);">25+</div>
-                        <p>Countries</p>
+                    <div class="stat">
+                        <div class="stat-number">25+</div>
+                        <p class="stat-label">Countries</p>
                     </div>
-                    <div>
-                        <div style="font-size: 2.5rem; font-weight: 700; color: var(--color-primary);">50+</div>
-                        <p>Institutions</p>
+                    <div class="stat">
+                        <div class="stat-number">50+</div>
+                        <p class="stat-label">Institutions</p>
                     </div>
                 </div>
 
                 <!-- Timeline / Cards -->
-                <div style="display: grid; gap: 3rem;">
+                <div class="timeline-container">
                     <!-- 2024 -->
-                    <article
-                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; align-items: center;">
+                    <article class="timeline-article">
                         <div>
                             <h2 class="mb-1">2024: Nairobi, Kenya</h2>
-                            <p class="mb-1"><strong>Theme:</strong> "Scaling Data Science in Africa"</p>
-                            <p class="mb-2">
+                            <p class="mb-1"><span class="timeline-theme">Theme:</span> "Scaling Data Science in Africa"</p>
+                            <p class="timeline-description">
                                 The 2024 symposium focused on the intersection of REDCap and data science, featuring
                                 workshops on API integration and Python for data cleaning.
                             </p>
                             <a href="#" class="btn btn-secondary">View Program (PDF)</a>
                         </div>
-                        <div
-                            style="background: #eee; height: 250px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #666;">
-                            Photo Placeholder
-                        </div>
+                        <div class="timeline-image-placeholder">Photo Placeholder</div>
                     </article>
 
                     <!-- 2023 -->
-                    <article
-                        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; align-items: center;">
-                        <div style="order: 2;"> <!-- Swap order for visual variety on desktop -->
+                    <article class="timeline-article timeline-article-reverse">
+                        <div>
                             <h2 class="mb-1">2023: Accra, Ghana</h2>
-                            <p class="mb-1"><strong>Theme:</strong> "Building Resilient Systems"</p>
-                            <p class="mb-2">
+                            <p class="mb-1"><span class="timeline-theme">Theme:</span> "Building Resilient Systems"</p>
+                            <p class="timeline-description">
                                 Held at the University of Ghana, this event brought together IT professionals to discuss
                                 server security and disaster recovery.
                             </p>
                             <a href="#" class="btn btn-secondary">View Program (PDF)</a>
                         </div>
-                        <div
-                            style="background: #eee; height: 250px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #666; order: 1;">
-                            Photo Placeholder
-                        </div>
+                        <div class="timeline-image-placeholder">Photo Placeholder</div>
                     </article>
                 </div>
             </div>
@@ -127,8 +114,7 @@
                 </div>
                 <div class="footer-col">
                     <h3>Contact</h3>
-                    <p>Email: <a href="mailto:info@redcapafrica.org"
-                            style="color: var(--color-accent);">info@redcapafrica.org</a></p>
+                    <p>Email: <a href="mailto:info@redcapafrica.org" class="footer-link-email">info@redcapafrica.org</a></p>
                     <p>Johannesburg, South Africa</p>
                 </div>
             </div>

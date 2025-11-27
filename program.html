@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Program | REDCap Africa Symposium</title>
+    <link rel="icon" type="image/svg+xml" href="./pics/Logo.png" />
     <meta name="description" content="Explore the symposium schedule, speakers, and sessions.">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/main.js" defer></script>
@@ -14,11 +15,7 @@
     <header class="site-header">
         <div class="container nav-container">
             <a href="index.html" class="logo">
-                <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                    <path
-                        d="M12 2L2 7l10 5 10-5-10-5zm0 9l2.5-1.25L12 8.5l-2.5 1.25L12 11zm0 2.5l-5-2.5-5 2.5L12 22l10-8.5-5-2.5-5 2.5z" />
-                </svg>
-                REDCap Africa
+                <img src="./pics/REDCapAfricalogo.png" alt="Logo">
             </a>
             <button class="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
                 ☰
@@ -38,8 +35,7 @@
     </header>
 
     <main>
-        <section class="section"
-            style="background-color: var(--color-secondary); color: var(--color-white); padding: 3rem 0;">
+        <section class="page-hero section">
             <div class="container text-center">
                 <h1>Symposium Program</h1>
                 <p>Discover sessions, workshops, and networking opportunities.</p>
@@ -49,18 +45,16 @@
         <section class="section">
             <div class="container">
                 <!-- Filters -->
-                <div class="program-filters"
-                    style="margin-bottom: 2rem; display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+                <div class="program-filters">
                     <button class="filter-btn btn btn-secondary active" data-filter="all">All Tracks</button>
                     <button class="filter-btn btn btn-secondary" data-filter="Governance">Governance</button>
-                    <button class="filter-btn btn btn-secondary"
-                        data-filter="Interoperability">Interoperability</button>
+                    <button class="filter-btn btn btn-secondary" data-filter="Interoperability">Interoperability</button>
                     <button class="filter-btn btn btn-secondary" data-filter="Infrastructure">Infrastructure</button>
                     <button class="filter-btn btn btn-secondary" data-filter="Training">Training</button>
                 </div>
 
                 <!-- Program Grid (Populated by JS) -->
-                <div id="program-grid" style="display: grid; gap: 1.5rem;">
+                <div id="program-grid" class="program-grid">
                     <p class="text-center">Loading program...</p>
                 </div>
             </div>
@@ -86,8 +80,7 @@
                 </div>
                 <div class="footer-col">
                     <h3>Contact</h3>
-                    <p>Email: <a href="mailto:info@redcapafrica.org"
-                            style="color: var(--color-accent);">info@redcapafrica.org</a></p>
+                    <p>Email: <a href="mailto:info@redcapafrica.org" class="footer-link-email">info@redcapafrica.org</a></p>
                     <p>Johannesburg, South Africa</p>
                 </div>
             </div>

@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>REDCap Africa Symposium | Home</title>
+  <link rel="icon" href="./pics/Logo.png" />
   <meta name="description"
-    content="Join the REDCap Africa Symposium to collaborate on health data governance, infrastructure, and best practices.">
+    content="REDCap Africa Symposium to collaborate on health data governance, infrastructure, and best practices.">
   <link rel="stylesheet" href="css/styles.css">
   <script src="js/main.js" defer></script>
 </head>
@@ -16,11 +17,7 @@
     <div class="container nav-container">
       <a href="index.html" class="logo">
         <!-- Placeholder SVG Logo -->
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-          <path
-            d="M12 2L2 7l10 5 10-5-10-5zm0 9l2.5-1.25L12 8.5l-2.5 1.25L12 11zm0 2.5l-5-2.5-5 2.5L12 22l10-8.5-5-2.5-5 2.5z" />
-        </svg>
-        REDCap Africa
+        <img src="./pics/REDCapAfricalogo.png" alt="Logo">
       </a>
       <button class="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
         ☰
@@ -41,18 +38,15 @@
 
   <main>
     <!-- Hero Section -->
-    <section class="hero section"
-      style="background-color: var(--color-secondary); color: var(--color-white); text-align: center; padding: 4rem 1rem;">
+    <section class="hero section" style="background: url(./pics/index.jpg) center / cover no-repeat fixed; ">
       <div class="container">
-        <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">REDCap Africa Symposium 2025</h1>
-        <p style="font-size: 1.25rem; margin-bottom: 2rem;">Advancing Health Data Collaboration & Governance</p>
-        <div style="margin-bottom: 2rem;">
-          <span
-            style="display: inline-block; background: var(--color-accent); color: var(--color-secondary); padding: 0.25rem 0.75rem; border-radius: 4px; font-weight: bold;">Hybrid
-            Event</span>
-          <span style="margin: 0 1rem;">|</span>
-          <span>November 15-17, 2025</span>
-          <span style="margin: 0 1rem;">|</span>
+        <h1>REDCap Africa Symposium 2026</h1>
+        <p>Advancing Health Data Collaboration & Governance</p>
+        <div class="hero-meta">
+          <span class="hero-badge">6 Days Event</span>
+          <span class="hero-meta-separator">|</span>
+          <span>To be announced, 2026</span>
+          <span class="hero-meta-separator">|</span>
           <span>Cape Town, South Africa</span>
         </div>
         <a href="registration.html" class="btn btn-primary">Register Now</a>
@@ -63,7 +57,7 @@
     <section class="section">
       <div class="container text-center">
         <h2 class="mb-2">Why Attend?</h2>
-        <p style="max-width: 800px; margin: 0 auto;">
+        <p class="value-prop-text">
           Join a diverse community of researchers, data managers, and IT professionals to share best practices, discuss
           data governance, and explore the future of REDCap in Africa.
         </p>
@@ -71,23 +65,23 @@
     </section>
 
     <!-- Keynote Speakers -->
-    <section class="section" style="background-color: var(--color-gray-100);">
+    <section class="section section-gray">
       <div class="container">
         <h2 class="mb-2 text-center">Keynote Speakers</h2>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+        <div class="speakers-grid">
           <!-- Speaker 1 -->
-          <div style="background: white; padding: 1.5rem; border-radius: 8px; text-align: center;">
-            <div style="width: 100px; height: 100px; background: #ddd; border-radius: 50%; margin: 0 auto 1rem;"></div>
-            <h3>Dr. Amina Juma</h3>
-            <p style="color: var(--color-primary); font-weight: 500;">African Health Research Institute</p>
-            <p style="font-size: 0.9rem; margin-top: 0.5rem;">"The Future of Health Data in Africa"</p>
+          <div class="speaker-card">
+            <div class="speaker-avatar"></div>
+            <h3>To be announced..</h3>
+            <p class="speaker-affiliation">University of the Witwatersrand</p>
+            <p class="speaker-quote">"Favourite Quote"</p>
           </div>
           <!-- Speaker 2 -->
-          <div style="background: white; padding: 1.5rem; border-radius: 8px; text-align: center;">
-            <div style="width: 100px; height: 100px; background: #ddd; border-radius: 50%; margin: 0 auto 1rem;"></div>
-            <h3>Prof. Kwame Osei</h3>
-            <p style="color: var(--color-primary); font-weight: 500;">University of Ghana</p>
-            <p style="font-size: 0.9rem; margin-top: 0.5rem;">"Data Sovereignty & Ethics"</p>
+          <div class="speaker-card">
+            <div class="speaker-avatar"></div>
+            <h3>To be announced...</h3>
+            <p class="speaker-affiliation">University of the Witwatersrand</p>
+            <p class="speaker-quote">"Favourite Quote"</p>
           </div>
         </div>
       </div>
@@ -97,40 +91,39 @@
     <section class="section">
       <div class="container">
         <h2 class="mb-2 text-center">Symposium Tracks</h2>
-        <div
-          style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; text-align: center;">
-          <div style="padding: 1.5rem; border: 1px solid #ddd; border-radius: 8px;">
+        <div class="tracks-grid">
+          <div class="track-card">
             <h3>Governance</h3>
             <p>Data ethics, policy, and compliance.</p>
           </div>
-          <div style="padding: 1.5rem; border: 1px solid #ddd; border-radius: 8px;">
+          <div class="track-card">
             <h3>Interoperability</h3>
             <p>FHIR, APIs, and system integration.</p>
           </div>
-          <div style="padding: 1.5rem; border: 1px solid #ddd; border-radius: 8px;">
+          <div class="track-card">
             <h3>Infrastructure</h3>
             <p>Server management, security, and scaling.</p>
           </div>
-          <div style="padding: 1.5rem; border: 1px solid #ddd; border-radius: 8px;">
+          <div class="track-card">
             <h3>Training</h3>
             <p>Capacity building and advanced user workshops.</p>
           </div>
         </div>
-        <div class="text-center" style="margin-top: 2rem;">
+        <div class="text-center">
           <a href="program.html" class="btn btn-secondary">View Full Program</a>
         </div>
       </div>
     </section>
 
     <!-- Sponsors Placeholder -->
-    <section class="section" style="background-color: var(--color-gray-100);">
+    <section class="section section-gray">
       <div class="container text-center">
         <h2 class="mb-2">Our Partners</h2>
-        <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; opacity: 0.6;">
-          <div style="width: 150px; height: 60px; background: #ccc;"></div>
-          <div style="width: 150px; height: 60px; background: #ccc;"></div>
-          <div style="width: 150px; height: 60px; background: #ccc;"></div>
-          <div style="width: 150px; height: 60px; background: #ccc;"></div>
+        <div class="partners-container">
+          <div class="partner-logo"></div>
+          <div class="partner-logo"></div>
+          <div class="partner-logo"></div>
+          <div class="partner-logo"></div>
         </div>
       </div>
     </section>
@@ -155,7 +148,7 @@
         </div>
         <div class="footer-col">
           <h3>Contact</h3>
-          <p>Email: <a href="mailto:info@redcapafrica.org" style="color: var(--color-accent);">info@redcapafrica.org</a>
+          <p>Email: <a href="mailto:info@redcapafrica.org" class="footer-link-email">info@redcapafrica.org</a>
           </p>
           <p>Johannesburg, South Africa</p>
         </div>
