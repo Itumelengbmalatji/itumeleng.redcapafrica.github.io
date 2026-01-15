@@ -424,14 +424,6 @@ img {
   padding: 3rem 0;
 }
  
-.page-venue-hero {
-  background: url(../pics/veune.jpg) no-repeat center;
-  background-size:stretch; ;
-  background-position: center;
-
-  color: var(--color-white);
-  padding: 3rem 0;
-}
 
 .page-hero h1 {
   margin: 0;

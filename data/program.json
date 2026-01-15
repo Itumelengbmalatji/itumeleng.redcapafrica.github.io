@@ -1,42 +1,50 @@
 [
   {
     "id": 1,
-    "title": "Opening Keynote: The Future of Health Data in Africa",
-    "speaker": "Dr. Amina Juma",
-    "affiliation": "African Health Research Institute",
-    "time": "09:00 - 10:00",
-    "day": "Day 1",
-    "track": "Governance",
-    "abstract": "An overview of the challenges and opportunities in health data governance across the continent."
+    "title": "Introductory Workshop",
+    "description":"Start your REDCap journey with confidence.Learn the basics of project setup and data entry in a hands-on environment.",
+    "andience": "Beginners and new REDCap users.",
+    "focus": "Basic setup, project creation, and data entry",
+    "format": "Interactive Hands-on training with live demos",
+    "track": "Introductory Workshop",
+    "day": "Sunday, 18 October",
+    "time": "09:00 - 16:00",
+    "outcome": "Participants will be able to create and manage simple REDCap"
   },
   {
     "id": 2,
-    "title": "REDCap for Clinical Trials: Best Practices",
-    "speaker": "John Doe",
-    "affiliation": "Clinical Trials Unit, UCT",
-    "time": "10:30 - 12:00",
-    "day": "Day 1",
-    "track": "Training",
-    "abstract": "A deep dive into setting up and managing clinical trials using REDCap."
+    "title": "Advanced Workshop",
+    "description":"Take your REDCap skills to the next level. Explore advanced features and integrations for complex research workflows.",
+    "andience": "Experienced REDCap users.",
+    "focus": "Advanced features like branching logic, calculated fields, and API integrations",
+    "format": "Interactive Hands-on training with live demos",
+    "track": "Advanced Workshop",
+    "day": "Monday, 19 October - Tuesday, 20 October",
+    "time": "09:00 - 16:00",
+    "outcome": "Learn to optimize REDCap for complex research workflows."
   },
   {
     "id": 3,
-    "title": "Interoperability Standards: FHIR and REDCap",
-    "speaker": "Sarah Smith",
-    "affiliation": "Health Informatics SA",
-    "time": "13:00 - 14:30",
-    "day": "Day 1",
-    "track": "Interoperability",
-    "abstract": "Connecting REDCap to other health information systems using FHIR."
+    "title": "Symposium",
+    "description":"Connect, share, and shape the future of health data. Join keynote sessions, panels, and abstract presentations with experts across Africa.",
+    "andience": "Beginners and new REDCap users.",
+    "focus": "Basic setup, project creation, and data entry",
+    "format": "Plenary sessions + breakout discussions",
+    "track": "Symposium",
+    "day": "Wednesday, 21 October - Tuesday, 22 October",
+    "time": "07:00 - 17:00",
+    "outcome": "Share best practices, explore innovations, and network with peers"
   },
   {
     "id": 4,
-    "title": "Infrastructure Scaling for Large Cohorts",
-    "speaker": "Michael Brown",
-    "affiliation": "Data Science Africa",
-    "time": "09:00 - 10:30",
-    "day": "Day 2",
-    "track": "Infrastructure",
-    "abstract": "Technical strategies for hosting REDCap for large-scale longitudinal studies."
+    "title": "System Administrator Training",
+    "description":"Master the backbone of REDCap infrastructure. Gain practical skills for server management, security, and troubleshooting.",
+    "andience": "REDCap sys-admins and IT teams.",
+    "focus": "Server setup, security, upgrades, and troubleshooting.",
+    "format": "Technical deep dive with Q&A.",
+    "track": "System Administrator Training",
+    "day": "Friday, 23 October",
+    "time": "09:00 - 16:00",
+    "outcome": " Equip sys-admins with skills to maintain robust REDCap environments."
   }
 ]
