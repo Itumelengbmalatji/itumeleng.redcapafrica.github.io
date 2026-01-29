@@ -151,7 +151,7 @@ function renderProgram(data) {
       <p style="color: var(--color-primary); font-weight: 500; margin-bottom: 0.5rem;">${session.format}</p>
       <p style="font-size: 0.9rem; color: #666; margin-bottom: 1rem;">${session.outcome}</p>
       <div style="font-size: 0.9rem; border-top: 1px solid #eee; padding-top: 1rem; display: flex; justify-content: space-between;">
-        <span>${session.day} | ${session.time}</span>
+        <span>${session.day} | ${session.time}</span> <a href="${session.agenda}"><button class="btn" style="background-color:#B00020; color: white;">Agenda</button></a>
       </div>
     `;
 
