@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Introductory Workshop",
-    "description":"Start your REDCap journey with confidence.Learn the basics of project setup and data entry in a hands-on environment.",
+    "description":"Start your REDCap journey with confidence. Learn the basics of project setup and data entry in a hands-on environment.",
     "andience": "Beginners and new REDCap users.",
     "focus": "Basic setup, project creation, and data entry",
     "format": "Interactive Hands-on training with live demos",

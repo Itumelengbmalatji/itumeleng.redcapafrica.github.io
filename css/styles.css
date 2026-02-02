@@ -85,6 +85,16 @@ img {
   margin: 0 auto;
   padding: 0 var(--spacing-sm);
 }
+.heading-program {
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  box-shadow: #0b0b0ba1  3px 7px 16px;
+  transition: background-color var(--transition-fast), transform var(--transition-fast);
+}
 
 .btn {
   display: inline-block;
@@ -93,6 +103,7 @@ img {
   font-weight: 600;
   cursor: pointer;
   border: none;
+  box-shadow: #0b0b0ba1  0px 1px 2px;
   transition: background-color var(--transition-fast), transform var(--transition-fast);
 }
 
@@ -395,7 +406,7 @@ img {
   padding: 1.5rem;
   border: 1px solid #ddd;
   border-radius: 8px;
-  box-shadow: #d3d3d3  0px 4px 0px;
+  box-shadow: #d3d3d3  0px 4px 10px;
 }
 
 .track-card h3 {
@@ -412,7 +423,7 @@ img {
 }
 
 .partner-logo {
-  width: 75px;
+  width: 120px;
   height: 60px;
  
 }
@@ -480,7 +491,7 @@ img {
   padding: 1.5rem;
   border-radius: 8px;
   text-align: center;
-  box-shadow: #d3d3d3  4px 4px 0px;
+  box-shadow: #d3d3d3  4px 8px 10px;
   width: 100%;
 }
 
@@ -489,7 +500,7 @@ img {
   padding: 1.5rem;
   border-radius: 8px;
   text-align: center;
-  box-shadow: #d3d3d3  4px 4px 0px;
+  box-shadow: #d3d3d3  4px 8px 10px;
   width: 320px;
 }
 
@@ -766,7 +777,7 @@ img {
 
 .timeline-image-placeholder {
   background: #eee;
-  height: 250px;
+  height: 200px;
   border-radius: 8px;
   display: flex;
   align-items: center;

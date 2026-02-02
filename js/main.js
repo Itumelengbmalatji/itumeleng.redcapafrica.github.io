@@ -141,17 +141,17 @@ function renderProgram(data) {
 
         card.innerHTML = `
       <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
-        <span style="background: var(--color-gray-100); padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.8rem;">${session.track} | ${session.andience} </span>
+        <span class="heading-program" style="background-color:#B00020; color: white;">${session.track} | ${session.andience} </span>
         <button class="bookmark-btn" aria-label="Bookmark session" style="background: none; border: none; cursor: pointer; color: #ccc;">
           ★
         </button>
       </div>
       <p style="font-size: 0.9rem; color: #666; margin-bottom: 1rem;">${session.description}</p>
-      <h3 style="margin-bottom: 0.5rem;">${session.focus}</h3>
-      <p style="color: var(--color-primary); font-weight: 500; margin-bottom: 0.5rem;">${session.format}</p>
+      <h4 style="margin-bottom: 0.5rem;">${session.focus}</h4>
+      <p style="padding: ; border-radius: 4px; font-size: 0.8rem;">${session.format}</p>
       <p style="font-size: 0.9rem; color: #666; margin-bottom: 1rem;">${session.outcome}</p>
       <div style="font-size: 0.9rem; border-top: 1px solid #eee; padding-top: 1rem; display: flex; justify-content: space-between;">
-        <span>${session.day} | ${session.time}</span> <a href="${session.agenda}"><button class="btn" style="background-color:#B00020; color: white;">Agenda</button></a>
+        <span>${session.day} | ${session.time}</span> <a href="${session.agenda}"><button class="btn" style="background-color:#666; color: white;">Agenda</button></a>
       </div>
     `;
 
