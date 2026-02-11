@@ -661,6 +661,7 @@ img {
 }
 
 .contact-info-col {
+  text-align: center;
   width: 100%;
 }
 
@@ -670,6 +671,7 @@ img {
 }
 
 .contact-links {
+  justify-content: center;
   display: flex;
   gap: 1rem;
 }
