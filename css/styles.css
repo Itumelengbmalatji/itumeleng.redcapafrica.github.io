@@ -11,23 +11,23 @@
   --color-white: #FFFFFF;
   --color-gray-100: #E5E5E5;
   --color-gray-200: #CCCCCC;
-  
+
   /* Typography */
   --font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --font-size-base: 16px;
   --line-height-base: 1.5;
-  
+
   /* Spacing */
   --spacing-xs: 0.5rem;
   --spacing-sm: 5rem;
   --spacing-md: 1.5rem;
   --spacing-lg: 2rem;
   --spacing-xl: 2rem;
-  
+
   /* Layout */
   --container-width: 1200px;
   --header-height: 90px;
-  
+
   /* Transitions */
   --transition-fast: 0.2s ease;
   --transition-normal: 0.3s ease;
@@ -37,13 +37,16 @@
 [data-theme="dark"] {
   --color-bg-light: #0B0B0B;
   --color-text-light: #F7F7F7;
-  --color-secondary: #F7F7F7; /* Invert for contrast */
+  --color-secondary: #F7F7F7;
+  /* Invert for contrast */
   --color-white: #1A1A1A;
   --color-gray-100: #333333;
 }
 
 /* Reset & Base */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -85,6 +88,7 @@ img {
   margin: 0 auto;
   padding: 0 var(--spacing-sm);
 }
+
 .heading-program {
   display: inline-block;
   padding: 0.5rem 0.75rem;
@@ -92,7 +96,7 @@ img {
   font-weight: 600;
   cursor: pointer;
   border: none;
-  box-shadow: #0b0b0ba1  3px 7px 16px;
+  box-shadow: #0b0b0ba1 3px 7px 16px;
   transition: background-color var(--transition-fast), transform var(--transition-fast);
 }
 
@@ -103,7 +107,7 @@ img {
   font-weight: 600;
   cursor: pointer;
   border: none;
-  box-shadow: #0b0b0ba1  0px 1px 2px;
+  box-shadow: #0b0b0ba1 0px 1px 2px;
   transition: background-color var(--transition-fast), transform var(--transition-fast);
 }
 
@@ -132,9 +136,17 @@ img {
   padding: var(--spacing-xl) 0;
 }
 
-.text-center { text-align: center; }
-.mb-1 { margin-bottom: var(--spacing-sm); }
-.mb-2 { margin-bottom: var(--spacing-md); }
+.text-center {
+  text-align: center;
+}
+
+.mb-1 {
+  margin-bottom: var(--spacing-sm);
+}
+
+.mb-2 {
+  margin-bottom: var(--spacing-md);
+}
 
 /* Accessibility */
 .sr-only {
@@ -204,6 +216,7 @@ img {
   height: 2px;
   background-color: var(--color-primary);
 }
+
 .hero {
   color: var(--color-white);
   text-align: center;
@@ -274,7 +287,7 @@ img {
 .footer-bottom {
   margin-top: var(--spacing-lg);
   padding-top: var(--spacing-md);
-  border-top: 1px solid rgba(255,255,255,0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   text-align: center;
   font-size: 0.9rem;
   color: var(--color-gray-200);
@@ -294,7 +307,7 @@ img {
     background-color: var(--color-white);
     flex-direction: column;
     padding: var(--spacing-md);
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transform: translateY(-150%);
     transition: transform var(--transition-normal);
   }
@@ -396,7 +409,7 @@ img {
 /* Tracks Grid */
 .tracks-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns:repeat(auto-fit, minmax(400px, 1fr));
   gap: 1.5rem;
   text-align: center;
   margin-bottom: 2rem;
@@ -406,7 +419,7 @@ img {
   padding: 1.5rem;
   border: 1px solid #ddd;
   border-radius: 8px;
-  box-shadow: #d3d3d3  0px 4px 10px;
+  box-shadow: #d3d3d3 0px 4px 10px;
 }
 
 .track-card h3 {
@@ -419,13 +432,13 @@ img {
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
-  
+
 }
 
 .partner-logo {
   width: 120px;
   height: 60px;
- 
+
 }
 
 /* Footer Links */
@@ -439,7 +452,7 @@ img {
   color: var(--color-white);
   padding: 3rem 0;
 }
- 
+
 
 .page-hero h1 {
   margin: 0;
@@ -479,6 +492,7 @@ img {
   max-width: 1000px;
   margin: 0 auto;
 }
+
 .committee-grid2 {
   display: flex;
   justify-content: center;
@@ -491,7 +505,7 @@ img {
   padding: 1.5rem;
   border-radius: 8px;
   text-align: center;
-  box-shadow: #d3d3d3  4px 8px 10px;
+  box-shadow: #d3d3d3 4px 8px 10px;
   width: 100%;
 }
 
@@ -500,7 +514,7 @@ img {
   padding: 1.5rem;
   border-radius: 8px;
   text-align: center;
-  box-shadow: #d3d3d3  4px 8px 10px;
+  box-shadow: #d3d3d3 4px 8px 10px;
   width: 320px;
 }
 
@@ -771,7 +785,7 @@ img {
   direction: rtl;
 }
 
-.timeline-article.reverse > * {
+.timeline-article.reverse>* {
   direction: ltr;
 }
 
