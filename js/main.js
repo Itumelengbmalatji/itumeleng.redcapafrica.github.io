@@ -141,7 +141,7 @@ function renderProgram(data) {
 
         card.innerHTML = `
       <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
-        <span class="heading-program" style="background-color:#B00020; color: white;">${session.track} | ${session.andience} </span>
+        <span class="heading-program" style="background-color:#B00020; color: white;"><span style="font-weight: bold;">${session.track}</span> | ${session.andience} </span>
         <button class="bookmark-btn" aria-label="Bookmark session" style="background: none; border: none; cursor: pointer; color: #ccc;">
           ★
         </button>
