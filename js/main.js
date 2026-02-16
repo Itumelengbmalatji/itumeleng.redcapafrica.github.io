@@ -141,7 +141,7 @@ function renderProgram(data) {
 
         card.innerHTML = `
       <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
-        <span class="heading-program" style="background-color:#B00020; color: white;"><span style="font-weight: 600;">${session.track}</span> | ${session.andience} </span>
+        <span class="heading-program" style="background-color:#B00020; color: white;"><span style="font-weight: 700;">${session.track}</span> | ${session.andience} </span>
         <button class="bookmark-btn" aria-label="Bookmark session" style="background: none; border: none; cursor: pointer; color: #ccc;">
           ★
         </button>
@@ -225,4 +225,5 @@ function downloadJSON(data, filename) {
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
 }
+
 
