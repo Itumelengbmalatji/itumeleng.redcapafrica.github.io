@@ -11,6 +11,100 @@
     <script src="js/main.js" defer></script>
 </head>
 
+<style>
+/* Carousel container */
+.carousel{ position: relative; max-width: 100%; }
+
+/* Track: horizontal scroll, 3 cards visible */
+.wrapper{
+    display: flex;
+    gap: 30px;
+    justify-content: flex-start;
+    align-items: stretch;
+    color: rgba(0,0,0,0.7);
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px 10px;
+    -webkit-overflow-scrolling: touch;
+}
+.wrapper::-webkit-scrollbar{ display: none; }
+
+.wrapper .card{
+    flex: 0 0 calc((100% - 60px)/3);
+    box-sizing: border-box;
+    background-color: rgb(244, 244, 244);
+    padding: 40px;
+    margin: 0;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px -1px rgba(10,99,169,0.16),
+        3px 3px 10px -1px rgba(255,255,255,0.7);
+    min-width: 220px;
+}
+
+.wrapper .card h3{ margin-bottom: 15px; }
+.wrapper .card.active{ color: rgba(255,255,255,1); }
+.wrapper .card h1{ margin-bottom: 10px; color: rgba(0,0,0,1); }
+.wrapper .card.active h1{ color: rgba(255,255,255,1); }
+.wrapper .card h1 span{ font-size: 12px; color: rgba(0,0,0,0.7); }
+.wrapper .card.active h1 span{ color: rgba(255,255,255,0.9); }
+.wrapper .card p{ margin: 20px 0; color: rgba(0,0,0,0.6); font-size: 14px; line-height: 1.5; }
+.wrapper .card.active p{ color: rgba(255,255,255,1); }
+.wrapper .card ul{ list-style: none; padding: 0; margin: 0; }
+.wrapper .card ul li{ line-height: 3; color: rgba(0,0,0,0.9); position: relative; padding-left: 36px; }
+.wrapper .card.active ul li{ color: rgba(255,255,255,0.9); }
+/* use the site logo as the bullet for card lists */
+.wrapper .card ul li::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    background-image: url('./pics/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.wrapper .card.active ul li::before{ opacity: 0.95; }
+/* hide any existing <i> icon markup inside these list items */
+.wrapper .card ul li i{ display: none; }
+.wrapper .card.active ul li i{ display: none; }
+.wrapper .card a{ margin: 20px 0 0; display: block; text-align: center; text-decoration: none; border: 1px solid #5f30e2; color: #5f30e2; padding: 15px; border-radius: 5px; font-weight: bold; transition: 0.4s; }
+
+/* Carousel navigation buttons */
+.carousel-btn{ position: absolute; top: 50%; transform: translateY(-50%); width: 40px; height: 40px; border-radius: 50%; border: none; background: rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; font-size: 20px; cursor: pointer; z-index: 10; }
+.carousel-btn.left{ left: -5rem; }
+.carousel-btn.right{ right: -5rem; }
+.carousel-btn[disabled]{ opacity: 0.35; cursor: default; }
+
+.carousel .wrapper a:hover{ background-color: #5f30e2; color: white; }
+.carousel .wrapper .card.active a:hover{ border:1px solid white; color: rgba(0,0,0,0.8); background: none; }
+
+/* pagination dots below the carousel */
+.carousel-pagination{ display:flex; gap:8px; justify-content:center; margin-top:16px; }
+.carousel-pagination .pagination-dot{ width:10px; height:10px; border-radius:50%; background: rgba(0,0,0,0.18); border:none; cursor:pointer; transition: transform 0.18s, background-color 0.18s; }
+.carousel-pagination .pagination-dot.active{ background: #850a0a; transform: scale(1.25); }
+.carousel-pagination .pagination-dot:focus{ outline: 2px solid rgba(95,48,226,0.2); }
+
+@media (max-width: 900px){ .wrapper .card{ flex: 0 0 calc((100% - 30px)/2); } }
+@media (max-width: 600px){
+    .wrapper{
+        flex-direction: column;
+        overflow-x: visible;
+        padding: 10px 0;
+        gap: 16px;
+    }
+    .wrapper .card{
+        flex: 0 0 auto;
+        width: 100%;
+        min-width: unset;
+        margin: 0;
+    }
+    .carousel-btn{ display:none; }
+}
+</style>
+
 <body>
     <header class="site-header">
         <div class="container nav-container">
@@ -35,7 +129,8 @@
     </header>
 
     <main>
-        <section class="page-hero section" style="background: url(./pics/bread-bg.png) center / cover no-repeat fixed; padding: 5rem 3rem; color: #fff;">
+        <section class="page-hero section"
+            style="background: url(./pics/bread-bg.png) center / cover no-repeat fixed; padding: 5rem 3rem; color: #fff;">
             <div class="container text-center">
                 <h1>Registration</h1>
                 <p>Secure your spot for the 2026 Symposium.</p>
@@ -47,15 +142,132 @@
                 <div class="registration-info">
                     <h2 class="mb-2">Register Now</h2>
                     <p class="mb-2">
-                        Join us for the REDCap Africa Symposium 2026 in Cape Town, South Africa!. Please complete the registration form below to secure your spot.
+                        Join us for the REDCap Africa Symposium 2026 in Cape Town, South Africa!. Please complete the
+                        registration form below to secure your spot.
                     </p>
                     <p class="mb-2">
                         Please link the registration to link to register
-                        
+
                     </p>
-                    <a href="registration.html" class="btn btn-primary">Register Now</a>
+
                 </div>
-            <!--div class="container registration-form">
+               </div>
+            <div class="container">
+          
+                <div class="wrapper">
+        <div class="card">
+            <h3>Option 1</h3>
+            <h1>R XX </h1>
+            <p>Combo 1</p>
+            <ul>
+                <li><i claass="fa-solid fa-square-check"></i>Intro</li>
+                <li><i clss="fa-solid fa-square-check"></i>Symposium</li>    
+            </ul>
+    
+
+        </div>
+
+        <div class="card">
+            <h3>Option 2</h3>
+            <h1>R XX </h1>
+            <p>Combo 2</p>
+            <ul>
+                <li><i class="fa-solid fa-square-check"></i>Intro</li>
+                <li><i class="fa-solid fa-square-check"></i>Adv</li>
+                <li><i class="fa-solid fa-square-check"></i>Symposium</li>
+            
+            </ul>
+        
+
+        </div>
+
+
+        <div class="card">
+           <h3>Option 3</h3>
+            <h1>R XX </h1>
+            <p>Combo 3</p>
+            <ul>
+                <li><i class="fa-solid fa-square-check"></i>Intro</li>
+                <li><i class="fa-solid fa-square-check"></i>Adv</li>
+                <li><i class="fa-solid fa-square-check"></i>Symposium</li>
+                <li><i class="fa-solid fa-square-check"></i>Sys-Admin</li>
+               
+            </ul>
+            
+
+        </div>
+
+        
+        </div>
+        
+        
+    </div>
+    <div class="container">
+    <div class="wrapper">
+            <div class="card">
+            <h3>Option 4</h3>
+            <h1>R XX </h1>
+            <p>Combo 4</p>
+            <ul>
+                <li><i class="fa-solid fa-square-check"></i> Adv</li>
+                <li><i class="fa-solid fa-square-check"></i> Symposium</li>
+            </ul>
+            
+
+        </div>
+
+        <div class="card">
+            <h3>Option 5</h3>
+            <h1>R XX</h1>
+            <p>Combo 5</p>
+            <ul>
+                <li><i class="fa-solid fa-square-check"></i> Adv</li>
+                <li><i class="fa-solid fa-square-check"></i> Sys-Admin</li>
+                <li><i class="fa-solid fa-square-check"></i> Symposium</li>
+            </ul>
+            
+
+        </div>
+        <div class="card">
+            <h3>Option 6</h3>
+            <h1>R XX</h1>
+            <p>Combo 6</p>
+            <ul>
+                <li><i class="fa-solid fa-square-check"></i>Sys-Admin</li>
+                <li><i class="fa-solid fa-square-check"></i>Symposium</li>
+                <li><i class="fa-solid fa-square-check"></i> Chat Support</li>
+            
+            </ul>
+
+        </div>
+        
+        </div>
+        
+       </div>  
+       <div class="container">
+            <div class="wrapper">
+            <div class="card">
+            <h3>Option 7</h3>
+            <h1>R XX</h1>
+            <p>Combo 7</p>
+            <ul>
+                <li><i class="fa-solid fa-square-check"></i> Symposium</li>
+            </ul>
+            
+        </div>
+        </div>
+         <a href="registration.html" class="btn btn-primary">Register Now</a>
+        </div>
+   
+              
+           
+    </div>
+
+    
+        </section>
+
+        
+        <!--div class="container registration-form">
                 <form id="registration-form" class="registration-form" novalidate>
                     <div class="mb-2">
                         <label for="full-name">Full Name <span class="required-asterisk">*</span></label>
@@ -158,7 +370,8 @@
                 </div>
                 <div class="footer-col">
                     <h3>Contact</h3>
-                    <p>Email: <a href="mailto:support@witsredcap.co.za" class="footer-link-email">support@witsredcap.co.za</a></p>
+                    <p>Email: <a href="mailto:support@witsredcap.co.za"
+                            class="footer-link-email">support@witsredcap.co.za</a></p>
                     <p>Johannesburg, South Africa</p>
                 </div>
             </div>
@@ -167,6 +380,67 @@
             </div>
         </div>
     </footer>
+        <script>
+        (function(){
+            const track = document.querySelector('.carousel .wrapper');
+            if(!track) return;
+            const leftBtn = document.querySelector('.carousel-btn.left');
+            const rightBtn = document.querySelector('.carousel-btn.right');
+            const scrollAmount = () => Math.round(track.clientWidth / 3);
+            function updateButtons(){
+                leftBtn.disabled = track.scrollLeft <= 0;
+                rightBtn.disabled = Math.ceil(track.scrollLeft + track.clientWidth) >= track.scrollWidth;
+            }
+            leftBtn.addEventListener('click', ()=> track.scrollBy({left: -scrollAmount(), behavior: 'smooth'}));
+            rightBtn.addEventListener('click', ()=> track.scrollBy({left: scrollAmount(), behavior: 'smooth'}));
+            track.addEventListener('scroll', ()=> window.requestAnimationFrame(updateButtons));
+            window.addEventListener('resize', updateButtons);
+            // pagination handling
+            const pagination = document.querySelector('.carousel-pagination');
+            function buildPagination(){
+                if(!pagination) return;
+                // clear existing
+                pagination.innerHTML = '';
+                const pageCount = Math.max(1, Math.ceil(track.scrollWidth / track.clientWidth));
+                for(let i=0;i<pageCount;i++){
+                    const dot = document.createElement('button');
+                    dot.type = 'button';
+                    dot.className = 'pagination-dot';
+                    dot.setAttribute('aria-label', `Go to page ${i+1}`);
+                    dot.dataset.index = i;
+                    dot.addEventListener('click', ()=>{
+                        track.scrollTo({ left: i * track.clientWidth, behavior: 'smooth' });
+                    });
+                    pagination.appendChild(dot);
+                }
+                updateActiveDot();
+            }
+
+            function updateActiveDot(){
+                if(!pagination) return;
+                const dots = Array.from(pagination.children);
+                if(!dots.length) return;
+                const idx = Math.round(track.scrollLeft / track.clientWidth);
+                dots.forEach((d,i)=> d.classList.toggle('active', i === idx));
+            }
+
+            // keep pagination in sync with carousel
+            track.addEventListener('scroll', ()=> window.requestAnimationFrame(()=>{
+                updateButtons();
+                updateActiveDot();
+            }));
+
+            window.addEventListener('resize', ()=>{
+                // rebuild pagination since sizes changed
+                buildPagination();
+                updateButtons();
+            });
+
+            // initial build + state
+            buildPagination();
+            updateButtons();
+        })();
+        </script>
 </body>
 
 </html>
