@@ -111,12 +111,12 @@ img {
 }
 
 .titlecard-primary {
-  background-color: var(--color-primary);
+  background-color: #B47A47;
   color: var(--color-white);
 }
 
 .titlecard-primary:hover {
-  background-color: var(--color-primary-dark);
+
   color: var(--color-white);
   font-weight: 600;
   transition: 500ms ease;
