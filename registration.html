@@ -19,21 +19,26 @@
 .wrapper{
     display: flex;
     gap: 30px;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: stretch;
     color: rgba(0,0,0,0.7);
     overflow-x: auto;
     scroll-behavior: smooth;
-    padding: 20px 10px;
+    padding: 40px 10px;
     -webkit-overflow-scrolling: touch;
+    flex-wrap: wrap;
 }
 .wrapper::-webkit-scrollbar{ display: none; }
 
+
+
 .wrapper .card{
-    flex: 0 0 calc((100% - 60px)/3);
+    position: relative; /* needed for absolute tab positioning */
+    overflow: visible;
+    flex: 0 0 calc((100% - 90px)/4);
     box-sizing: border-box;
     background-color: rgb(244, 244, 244);
-    padding: 40px;
+    padding: 0px 40px 0px ;
     margin: 0;
     border-radius: 10px;
     box-shadow: 10px 10px 10px -1px rgba(10,99,169,0.16),
@@ -102,6 +107,26 @@
         margin: 0;
     }
     .carousel-btn{ display:none; }
+
+
+}
+
+.card-title {
+    position: absolute;
+    top: -2rem;      /* float the tab above the card */
+    left: 10px;
+    background-color: #fff; /* match card background */
+    padding: 0 8px;
+    
+    z-index: 1; 
+            /* sit on top of card edges */
+}
+
+.card-title h3,
+.card-title h4,
+.card-title h5 {
+    margin: 0;
+    font-size: 1rem;
 }
 </style>
 
@@ -156,45 +181,45 @@
           
                 <div class="wrapper">
         <div class="card">
-            <h3>Option 1</h3>
-            <h1>R XX </h1>
-            <p>Combo 1</p>
-            <ul>
-                <li><i claass="fa-solid fa-square-check"></i>Intro</li>
-                <li><i clss="fa-solid fa-square-check"></i>Symposium</li>    
-            </ul>
+            <h5 class="card-title"><span class="titlecard titlecard-primary">Option 1 | R 4250</span></h5>
+            
+            <p>
+                <li><i class="fa-solid fa-square-check"></i>Intro</li>
+                <li><i class="fa-solid fa-square-check"></i>Symposium</li>
+           </p>
     
 
         </div>
 
         <div class="card">
-            <h3>Option 2</h3>
-            <h1>R XX </h1>
-            <p>Combo 2</p>
-            <ul>
+             <h5 class="card-title"><span class="titlecard titlecard-primary">Option 2 | R 6700</span></h5>
+            <p>
                 <li><i class="fa-solid fa-square-check"></i>Intro</li>
                 <li><i class="fa-solid fa-square-check"></i>Adv</li>
                 <li><i class="fa-solid fa-square-check"></i>Symposium</li>
-            
-            </ul>
+           </p>
+           
         
 
         </div>
 
 
         <div class="card">
-           <h3>Option 3</h3>
-            <h1>R XX </h1>
-            <p>Combo 3</p>
-            <ul>
-                <li><i class="fa-solid fa-square-check"></i>Intro</li>
-                <li><i class="fa-solid fa-square-check"></i>Adv</li>
-                <li><i class="fa-solid fa-square-check"></i>Symposium</li>
-                <li><i class="fa-solid fa-square-check"></i>Sys-Admin</li>
-               
-            </ul>
-            
+           <h5 class="card-title"><span class="titlecard titlecard-primary">Option 3 | R 8550</span></h5>
+            <p>
+                <li>Introductory</li>
+                <li>Advanced</li>
+                <li>Symposium</li>
+                <li>Sys-Admin</li>
+            </p>
+        </div>
 
+       <div class="card">
+            <h5 class="card-title"><span class="titlecard titlecard-primary">Option 4 | R 5500</span></h5>
+            <p>
+                <li><i class="fa-solid fa-square-check"></i> Adv</li>
+                <li><i class="fa-solid fa-square-check"></i> Symposium</li>
+            </p>
         </div>
 
         
@@ -202,61 +227,48 @@
         
         
     </div>
-    <div class="container">
+    <div class="container" style="display: flex; justify-content: center;">
     <div class="wrapper">
-            <div class="card">
-            <h3>Option 4</h3>
-            <h1>R XX </h1>
-            <p>Combo 4</p>
-            <ul>
-                <li><i class="fa-solid fa-square-check"></i> Adv</li>
-                <li><i class="fa-solid fa-square-check"></i> Symposium</li>
-            </ul>
             
 
-        </div>
-
         <div class="card">
-            <h3>Option 5</h3>
-            <h1>R XX</h1>
-            <p>Combo 5</p>
-            <ul>
+            <h5 class="card-title"><span class="titlecard titlecard-primary">Option 5 | R 7350</span></h5>
+            
+            
+            <p>
                 <li><i class="fa-solid fa-square-check"></i> Adv</li>
                 <li><i class="fa-solid fa-square-check"></i> Sys-Admin</li>
                 <li><i class="fa-solid fa-square-check"></i> Symposium</li>
-            </ul>
+            </p>
             
 
         </div>
         <div class="card">
-            <h3>Option 6</h3>
-            <h1>R XX</h1>
-            <p>Combo 6</p>
-            <ul>
+            <h5 class="card-title"><span class="titlecard titlecard-primary">Option 6 | R 4900</span></h5>
+
+            
+            <p>
                 <li><i class="fa-solid fa-square-check"></i>Sys-Admin</li>
                 <li><i class="fa-solid fa-square-check"></i>Symposium</li>
                 <li><i class="fa-solid fa-square-check"></i> Chat Support</li>
-            
-            </ul>
+            </p>
 
+        </div>
+         <div class="card">
+            <h5 class="card-title"><span class="titlecard titlecard-primary">Option 7 | R 3050</span></h5>
+            
+            <p>
+                <li><i class="fa-solid fa-square-check"></i> Symposium</li>
+            </p>
+            
         </div>
         
         </div>
         
        </div>  
-       <div class="container">
-            <div class="wrapper">
-            <div class="card">
-            <h3>Option 7</h3>
-            <h1>R XX</h1>
-            <p>Combo 7</p>
-            <ul>
-                <li><i class="fa-solid fa-square-check"></i> Symposium</li>
-            </ul>
+       <div class="container" style="display: flex; justify-content: center;">
             
-        </div>
-        </div>
-         <a href="registration.html" class="btn btn-primary">Register Now</a>
+         <a href="registration.html" class="btn titlecard-primary">Register Now</a>
         </div>
    
               
