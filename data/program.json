@@ -9,7 +9,8 @@
     "track": "Introductory Workshop",
     "day": "Sunday, 18 October",
     "time": "09:00 - 16:00",
-    "outcome": "Participants will be able to create and manage simple REDCap"
+    "outcome": "Participants will be able to create and manage simple REDCap",
+    "link" : "https://redcap.africa/surveys/?s=J4kC27IzHYrr5tbe"
   },
   {
     "id": 2,
@@ -21,7 +22,8 @@
     "track": "Advanced Workshop",
     "day": "Monday, 19 October - Tuesday, 20 October",
     "time": "09:00 - 16:00",
-    "outcome": "Learn to optimize REDCap for complex research workflows."
+    "outcome": "Learn to optimize REDCap for complex research workflows.",
+    "link" : "https://redcap.africa/surveys/?s=FacLKdNrk5P8uX9a"
 
   },
   {
@@ -34,7 +36,9 @@
     "track": "Symposium",
     "day": "Wednesday, 21 October - Tuesday, 22 October",
     "time": "07:00 - 17:00",
-    "outcome": "Share best practices, explore innovations, and network with peers"
+    "outcome": "Share best practices, explore innovations, and network with peers",
+    "link" : "https://redcap.africa/surveys/?s=3Y9C8AJKN44RP3XD"
+    
   },
   {
     "id": 4,
@@ -46,6 +50,7 @@
     "track": "System Administrator Training",
     "day": "Friday, 23 October",
     "time": "09:00 - 16:00",
-    "outcome": " Equip sys-admins with skills to maintain robust REDCap environments."
+    "outcome": " Equip sys-admins with skills to maintain robust REDCap environments.",
+    "link" : "https://redcap.africa/surveys/?s=aqkhu6HfTQc389xu"
   }
 ]

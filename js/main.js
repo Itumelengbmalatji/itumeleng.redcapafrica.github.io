@@ -151,7 +151,7 @@ function renderProgram(data) {
       <p style="padding: ; border-radius: 4px; font-size: 0.8rem;">${session.format}</p>
       <p style="font-size: 0.9rem; color: #666; margin-bottom: 1rem;">${session.outcome}</p>
       <div style="font-size: 0.9rem; border-top: 1px solid #eee; padding-top: 1rem; display: flex; justify-content: space-between;">
-        <span>${session.day} | ${session.time}</span> <a href="${session.agenda}"><button class="btn" style="background-color:#666; color: white;">Agenda</button></a>
+        <span>${session.day} | ${session.time}</span> <a href="${session.link}" target="_blank"><button class="btn" style="background-color:#666; color: white;">Agenda</button></a>
       </div>
     `;
 
@@ -225,5 +225,3 @@ function downloadJSON(data, filename) {
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
 }
-
-
