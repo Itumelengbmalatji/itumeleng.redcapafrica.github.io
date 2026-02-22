@@ -823,6 +823,12 @@ img {
   color: #666;
 }
 
+.timeline-image-placeholder img {
+  max-width: 110%;
+  height: auto;
+  border-radius: 8px;
+}
+
 .timeline-content h2 {
   margin-bottom: 0.5rem;
 }
