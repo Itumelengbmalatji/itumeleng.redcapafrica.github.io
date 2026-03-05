@@ -338,6 +338,13 @@ img {
   .nav-menu.active {
     transform: translateY(0);
   }
+
+  /* Stack partner logos vertically on small screens */
+  .partners-container {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-md);
+  }
 }
 
 /* Hero Section Headings */
@@ -438,6 +445,19 @@ img {
   margin-bottom: 2rem;
 }
 
+/* Mobile tweaks: stack tracks in a single centered column */
+@media (max-width: 768px) {
+  .tracks-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .track-card {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
 .track-card {
   padding: 1.5rem;
   border: 1px solid #ddd;
@@ -460,7 +480,7 @@ img {
 
 .partner-logo {
   width: 140px;
-  height: 60px;
+  height: 100px;
 
 }
 
@@ -496,6 +516,19 @@ img {
   list-style: disc;
   padding-left: 1.5rem;
   margin-bottom: 2rem;
+}
+
+/* Value prop list styling */
+.value-prop-list {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .value-prop-list {
+    text-align: center;
+  }
 }
 
 .list-disc li {
