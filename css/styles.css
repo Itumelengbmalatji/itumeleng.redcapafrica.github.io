@@ -79,6 +79,21 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+  /* allow object-fit when container dimensions are defined */
+  object-fit: cover;
+  object-position: center;
+}
+
+/* mobile tweaks: make images fill their container while keeping proportions */
+@media (max-width: 768px) {
+  img {
+    width: 100%;
+    height: auto;
+    /* object-fit helps when height is constrained by parent */
+    object-fit: cover;
+    object-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 /* Utility Classes */
@@ -748,6 +763,21 @@ img {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 3rem;
+}
+
+.container1 {
+  padding: 3rem;
+}
+
+/* center items on narrower viewports */
+@media (max-width: 768px) {
+  .venue-container {
+    justify-items: center;
+  }
+
+  .venue-details {
+    text-align: center;
+  }
 }
 
 .venue-image-placeholder {
