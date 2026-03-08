@@ -786,6 +786,31 @@ img {
   .venue-details {
     text-align: center;
   }
+
+  /* Fix background images on mobile */
+  .hero,
+  .page-hero {
+    background-attachment: scroll !important;
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;
+  }
+
+  /* Ensure images don't overflow containers */
+  .page-hero img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  /* General image container fixes */
+  .venue-image-placeholder,
+  .map-placeholder {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: 200px;
+  }
 }
 
 .venue-image-placeholder {
