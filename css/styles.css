@@ -75,14 +75,13 @@ a:hover {
   color: var(--color-primary-dark);
 }
 
+
 img {
   max-width: 100%;
   height: auto;
-  display: block;
-  /* allow object-fit when container dimensions are defined */
-  object-fit: cover;
-  object-position: center;
+  display: block; /* avoids stray whitespace under images */
 }
+
 
 /* mobile tweaks: make images fill their container while keeping proportions */
 @media (max-width: 768px) {
