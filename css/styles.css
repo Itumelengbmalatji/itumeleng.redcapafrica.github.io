@@ -258,7 +258,7 @@ img {
 .hero {
   color: var(--color-white);
   text-align: center;
-  padding: 30vh 1rem;
+  padding: 30vh 0rem;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
