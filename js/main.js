@@ -143,7 +143,6 @@ function renderProgram(data) {
       <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 1rem;">
         <span class="heading-program" style="background-color:#B00020; color: white;"><span style="font-weight: 700;">${session.track}</span> | ${session.andience} </span>
         <button class="bookmark-btn" aria-label="Bookmark session" style="background: none; border: none; cursor: pointer; color: #ccc;">
-          ★
         </button>
       </div>
       <p style="font-size: 0.9rem; color: #666; margin-bottom: 1rem;">${session.description}</p>
