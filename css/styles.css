@@ -104,6 +104,12 @@ img {
   padding: 0 var(--spacing-sm);
 }
 
+@media only screen and (max-width: 767px) {
+    .breadcrumbs {
+        padding: 60px 0;
+    }
+}
+
 .heading-program {
   display: inline-block;
   padding: 0.5rem 0.75rem;
