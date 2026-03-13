@@ -778,6 +778,15 @@ img {
 }
 
 /* center items on narrower viewports */
+@media (max-width: 1024px) and (min-width: 769px) {
+  /* Tablet-specific styles for hero images */
+  .page-hero img {
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+  }
+}
+
 @media (max-width: 768px) {
   .venue-container {
     justify-items: center;
