@@ -803,6 +803,30 @@ img {
     height: auto;
     max-height: 300px;
   }
+
+  /* Tablet-specific styles for partner logos */
+  .partner-logo {
+    width: auto;
+    max-width: 140px;
+    height: auto;
+    max-height: 100px;
+  }
+
+  /* Tablet-specific styles for venue and map placeholders */
+  .venue-image-placeholder,
+  .map-placeholder {
+    height: auto;
+    min-height: 250px;
+  }
+
+  /* Tablet-specific styles for hero background images */
+  .hero,
+  .page-hero {
+    background-attachment: scroll !important;
+    background-size: cover;
+    background-position: center;
+    min-height: 60vh;
+  }
 }
 
 @media (max-width: 768px) {
