@@ -781,9 +781,10 @@ img {
 @media (max-width: 1024px) and (min-width: 769px) {
   /* Tablet-specific styles for hero images */
   .page-hero img {
-    height: auto;
+    height: 400px;
     max-height: 300px;
     object-fit: cover;
+    
   }
 
   /* Tablet-specific styles for timeline images */
