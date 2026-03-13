@@ -785,6 +785,24 @@ img {
     max-height: 300px;
     object-fit: cover;
   }
+
+  /* Tablet-specific styles for timeline images */
+  .timeline-image-placeholder {
+    height: auto;
+    min-height: 200px;
+  }
+
+  .timeline-image-placeholder img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  /* Tablet-specific styles for committee photos */
+  .committee-photo {
+    height: auto;
+    max-height: 300px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -814,7 +832,8 @@ img {
 
   /* General image container fixes */
   .venue-image-placeholder,
-  .map-placeholder {
+  .map-placeholder,
+  .timeline-image-placeholder {
     width: 100%;
     max-width: 100%;
     height: auto;
