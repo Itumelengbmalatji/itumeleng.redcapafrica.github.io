@@ -565,8 +565,8 @@ img {
 /* Committee Members */
 .committee-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
   justify-items: center;
   max-width: 1000px;
   margin: 0 auto;
@@ -581,7 +581,7 @@ img {
 
 .committee-card {
   background: white;
-  padding: 1.5rem;
+  padding: 0.5rem;
   border-radius: 8px;
   text-align: center;
   box-shadow: #d3d3d3 4px 8px 10px;
@@ -590,7 +590,7 @@ img {
 
 .committee-card2 {
   background: white;
-  padding: 1.5rem;
+  padding: 0.5rem;
   border-radius: 8px;
   text-align: center;
   box-shadow: #d3d3d3 4px 8px 10px;
@@ -777,6 +777,10 @@ img {
   padding: 3rem;
 }
 
+.container2 {
+  padding: 1rem;
+}
+
 /* center items on narrower viewports */
 @media (max-width: 1400px) and (min-width: 769px) {
   /* Tablet-specific styles for hero images */
@@ -800,7 +804,6 @@ img {
 
   /* Tablet-specific styles for committee photos */
   .committee-photo {
-    height: auto;
     max-height: 300px;
   }
 
