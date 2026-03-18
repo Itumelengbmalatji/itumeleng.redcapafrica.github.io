@@ -504,6 +504,50 @@ img {
   color: var(--color-accent);
 }
 
+/* Image left + description right section */
+.info-row {
+  display: flex;
+  align-items: stretch;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.info-row .info-image,
+.info-row .info-text {
+  flex: 1;
+}
+
+.info-row .info-image img {
+  width: 100%;
+  height: 100%;
+  max-height: 320px;
+  object-fit: cover;
+
+  border: 1px solid #ddd;
+}
+
+.info-row .info-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.4rem;
+}
+
+.info-row .info-text h3 {
+  margin-bottom: 0.5rem;
+  color: var(--color-primary);
+}
+
+@media (max-width: 768px) {
+  .info-row {
+    display: block;
+  }
+  .info-row .info-image img {
+    max-height: 240px;
+  }
+}
+
 /* Page Hero Section */
 .page-hero {
   background-color: #5c5c5cb0;
@@ -596,7 +640,17 @@ img {
   border-radius: 8px;
   text-align: center;
   box-shadow: #d3d3d3 4px 8px 10px;
-  width: 320px;
+  width: 270px;
+}
+.committee-card3 {
+  background: white;
+  padding: 0.5rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: #d3d3d3 4px 8px 10px;
+  width: 270px;
+  height: 100%;
+  max-width: none;
 }
 
 @media (max-width: 1200px) {
@@ -607,7 +661,7 @@ img {
 
 .committee-photo {
   width: 100%;
-  height: 300px;
+  height: 200px;
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 1rem;
