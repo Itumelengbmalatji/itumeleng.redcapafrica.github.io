@@ -638,7 +638,8 @@ img {
   border-radius: 8px;
   text-align: center;
   box-shadow: #d3d3d3 4px 8px 10px;
-  width: 100%;
+  width: 270px;
+  justify-self: center;
   max-width: none;
 }
 
