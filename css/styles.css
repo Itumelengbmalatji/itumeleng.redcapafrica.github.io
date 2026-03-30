@@ -624,6 +624,14 @@ img {
   margin: 0 auto;
 }
 
+.committee-grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(240px, 1fr));
+  gap: 1.5rem;
+  width: min(100%, 1400px);
+  margin: 0 auto;
+}
+
 .committee-card {
   background: white;
   padding: 0.5rem;
@@ -644,6 +652,7 @@ img {
 }
 .committee-card3 {
   background: white;
+  
   padding: 0.5rem;
   border-radius: 8px;
   text-align: center;
@@ -651,11 +660,22 @@ img {
   width: 270px;
   height: 100%;
   max-width: none;
+  margin-bottom: 0.5rem;
+  justify-self: center;
 }
 
 @media (max-width: 1200px) {
   .committee-grid {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+  .committee-grid3 {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .committee-grid3 {
+    grid-template-columns: 1fr;
   }
 }
 
