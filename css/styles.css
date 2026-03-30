@@ -1013,11 +1013,25 @@ img {
   gap: 2rem;
   margin-bottom: 4rem;
   text-align: center;
+
 }
 
 .stat {
   width: 100%;
+  position: relative;
+}
 
+.stat::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url(../pics/stat-4.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 30% 120%;
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: 0;
 }
 
 @media (min-width: 769px) {
