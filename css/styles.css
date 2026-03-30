@@ -1017,10 +1017,7 @@ img {
 
 .stat {
   width: 100%;
-  border: 2px solid #ddd;
-  padding: 0.5rem;
-  border-radius: 8px;
-  box-shadow: #d3d3d3 0px 2px 50px;
+
 }
 
 @media (min-width: 769px) {
