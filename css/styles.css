@@ -666,14 +666,21 @@ img {
   justify-self: center;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1200px), (max-width: 790px) {
   .committee-grid {
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   }
   .committee-grid3 {
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   }
 }
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0;
+  }
+}
+
 
 @media (max-width: 768px) {
   .committee-grid3 {
