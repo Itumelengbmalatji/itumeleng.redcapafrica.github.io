@@ -615,7 +615,15 @@ img {
   justify-items: stretch;
   width: min(100%, 1400px);
   margin: 0 auto;
+  
 }
+
+@media screen and (max-width: 1300px) {
+  .committee-grid {
+    gap: 1rem;
+  }
+}
+
 
 .committee-grid2 {
   display: flex;
@@ -631,6 +639,12 @@ img {
   gap: 1.5rem;
   width: min(100%, 1400px);
   margin: 0 auto;
+}
+
+@media (min-width: 769px) {
+  .container4 .committee-grid3 {
+    gap: 0.5rem;
+  }
 }
 
 .committee-card {
@@ -678,6 +692,11 @@ img {
 @media (max-width: 768px) {
   .committee-grid3 {
     grid-template-columns: 1fr;
+  }
+  .committee-card,
+  .committee-card2,
+  .committee-card3 {
+    margin: 0.5rem auto;
   }
 }
 
@@ -890,6 +909,21 @@ img {
   /* Tablet-specific styles for committee photos */
   .committee-photo {
     max-height: 300px;
+  }
+
+  /* Tablet landscape spacing for committee cards */
+  @media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+    .committee-grid,
+    .committee-grid3,
+    .committee-grid2 {
+      gap: 0.5rem;
+    }
+
+    .committee-card,
+    .committee-card2,
+    .committee-card3 {
+      margin: 0.25rem auto;
+    }
   }
 
   /* Tablet-specific styles for partner logos */
