@@ -615,20 +615,12 @@ img {
   justify-items: stretch;
   width: min(100%, 1400px);
   margin: 0 auto;
-  
 }
-
-@media screen and (max-width: 1300px) {
-  .committee-grid {
-    gap: 1rem;
-  }
-}
-
 
 .committee-grid2 {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
   width: min(100%, 1400px);
   margin: 0 auto;
 }
@@ -636,15 +628,9 @@ img {
 .committee-grid3 {
   display: grid;
   grid-template-columns: repeat(3, minmax(240px, 1fr));
-  gap: 1.5rem;
-  width: min(100%, 1400px);
+  gap: 0.5rem;
+  width: min(80%, 1400px);
   margin: 0 auto;
-}
-
-@media (min-width: 769px) {
-  .container4 .committee-grid3 {
-    gap: 0.5rem;
-  }
 }
 
 .committee-card {
