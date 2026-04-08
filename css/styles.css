@@ -356,9 +356,11 @@ img {
 
   /* Stack partner logos vertically on small screens */
   .partners-container {
+    position: relative;
     flex-direction: column;
     align-items: center;
     gap: var(--spacing-md);
+    margin-top: -1rem;
   }
 }
 
@@ -668,16 +670,16 @@ img {
 
 @media (max-width: 1200px), (max-width: 790px) {
   .committee-grid {
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px,300px, 1fr));
   }
   .committee-grid3 {
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px,300px, 1fr));
   }
 }
 
 @media (max-width: 480px) {
   .container {
-    padding: 0;
+    padding: 0 1.5rem;
   }
 }
 
