@@ -499,7 +499,7 @@ img {
   padding-top: 50px;
    width: 120px;
 }
-@media (max-width: 800px)  {
+@media (max-width: 800px), (max-width: 1400px) {
   .partnera img {
     padding-top: 30px;
     
