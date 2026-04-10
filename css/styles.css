@@ -493,10 +493,15 @@ img {
   gap: 2rem;
   flex-wrap: wrap;
 
+  
 }
+.mb-4 {
+    font-weight: 500;
+  }
 @media (max-width: 300px), (max-width: 400px) {
   .mb-4 {
   margin-bottom: var(--spacing-lg);
+ 
 }
 }
 
