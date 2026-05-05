@@ -1152,6 +1152,8 @@ img {
 
 .timeline-description {
   margin-bottom: 1.5rem;
+  text-align: justify;
+  padding-right: 10px;
 }
 
 /* Program Page */
